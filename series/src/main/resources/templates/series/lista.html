@@ -1,0 +1,28 @@
+<DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<table>
+	<thead>
+		<tr>
+			<th>Nome</th>
+			<th>Plataforma</th>
+			<th>Ano</th>
+			<th>Genero</th>
+		</tr>
+	</thead>
+
+<tbody>
+	<tr th:each="serie : ${series}">
+			<td th:text="${serie.nome}">Nome</td>
+			<td th:text="${serie.plataforma}">Plataforma</td>
+			<td th:text="${serie.anoLancamento}">Ano</td>
+			<td th:text="${serie.genero}">Gênero</td>
+	</tr>
+</tbody>
+</table>
+</body>
+</html>

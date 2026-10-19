@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xlmns:th="http://thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<form action="/paginas/series/nova" method="post" th:object="${serie}">
+		<p>
+			<label for="nome">Nome</label>
+			<input type="text" th:field="*{nome}">
+		</p>
+		<p>
+			<label for="plataforma">Plataforma</label>
+			<input type="text" th:field="*{plataforma}">
+		</p>
+		<p>
+			<label for="anoLancamento">Ano de Lancamento</label>
+			<input type="number" th:field="*{ano lancamento}">
+		</p>
+		<p>
+			<label for="genero">Gênero</label>
+			<input type="text" th:field="*{genero}">
+		</p>
+		<button type="submit">Cadastro</button>
+	</form>
+</body>
+</html>
