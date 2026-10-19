@@ -19,7 +19,7 @@ public class SeriePaginaController {
 	
 	@GetMapping("/paginas/series")
 	public String listar(Model model) {
-		model.addAttribute("seires", dao.listarTodas());
+		model.addAttribute("series", dao.listarTodas());
 		return "series/lista";
 	}
 	
